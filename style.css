@@ -1,0 +1,23 @@
+.navbar {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav1,
+.nav2 {
+  border: 1px solid black;
+}
+
+.nav1 {
+  border: 1px solid black;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav2 {
+  width: 30%;
+}
