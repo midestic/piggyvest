@@ -1,23 +1,379 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
 .navbar {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
-.nav1,
+/* .nav1,
 .nav2 {
   border: 1px solid black;
-}
+} */
 
 .nav1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.nav1 span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .nav2 {
   width: 30%;
+}
+
+.signBtn {
+  border: 1px solid black;
+  background-color: white;
+  width: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.createBtn {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.heroSection {
+  height: 100vh;
+  padding-top: 20px;
+}
+.heroDiv {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.heroOne,
+.heroTwo {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: auto;
+  /* padding: 20px; */
+}
+
+.heroOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroOneInner {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+
+.heroOneInner button {
+  width: 350px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #0089ff;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.heroDesc {
+  font-size: 20px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.hSpan1,
+.hSpan2 {
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.heroTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2Div {
+  width: 100%;
+  position: relative;
+
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatDiv 5s ease-in-out infinite;
+}
+
+@keyframes floatDiv {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.herogal {
+  width: 80%;
+  height: 100%;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.tagDiv {
+  position: absolute;
+  top: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+
+.safelock {
+  width: 250px;
+}
+
+.flxnaira {
+  width: 160px;
+}
+
+.pgbank {
+  width: 140px;
+}
+
+.tsavings {
+  width: 250px;
+}
+
+.investify {
+  width: 220px;
+}
+
+.hmoney {
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+    padding: 20px;
+  }
+
+  .mobileNavDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heroSection {
+    height: auto;
+    padding-top: 20px;
+  }
+  .heroDiv {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .heroOne,
+  .heroTwo {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+  }
+
+  .heroOne {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .heroOneInner {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .heroOneInner button {
+    width: 95%;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: #0089ff;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    /* width: 90%; */
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(18, 34, 49);
+    line-height: 56px;
+  }
+
+  .heroDesc {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(61, 79, 96);
+  }
+
+  .hSpan1,
+  .hSpan2 {
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+
+  .hBtnDiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heroTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h2Div {
+    width: 90%;
+    position: relative;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 5s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  @keyframes floatDiv {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  .herogal {
+    width: 100%;
+    height: 100%;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .tagDiv {
+    position: absolute;
+    top: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    /* border: 1px solid; */
+  }
+
+  .safelock {
+    transform: scale(60%);
+  }
+
+  .flxnaira {
+    transform: scale(60%);
+  }
+
+  .pgbank {
+    transform: scale(60%);
+  }
+
+  .tsavings {
+    transform: scale(60%);
+  }
+
+  .investify {
+    transform: scale(60%);
+  }
+
+  .hmoney {
+    transform: scale(60%);
+  }
 }
